@@ -19,6 +19,13 @@ const App = () => {
     text-decoration: none;
     color: #000;
   }
+
+  section {
+    width: 70%;
+
+    margin: 0 auto;
+
+  }
   `;
 
   return (

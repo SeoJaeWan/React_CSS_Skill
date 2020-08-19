@@ -5,20 +5,28 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <BannerContainer>
-      <h1 className="banner-title">React Skill</h1>
+      <h1 className="banner-title">React CSS Skill</h1>
       <BannerNav>
         <ul className="banner-menu">
           <li>
-            <Link className="banner-menu-items">Home</Link>
+            <Link className="banner-menu-items" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link className="banner-menu-items">Slide</Link>
+            <Link className="banner-menu-items" to="/Slide">
+              Slide
+            </Link>
           </li>
           <li>
-            <Link className="banner-menu-items">Drag&amp;Drop</Link>
+            <Link className="banner-menu-items" to="/DragDrop">
+              Drag&amp;Drop
+            </Link>
           </li>
           <li>
-            <Link className="banner-menu-items">Floating Banner</Link>
+            <Link className="banner-menu-items" to="/Floating">
+              Floating Banner
+            </Link>
           </li>
         </ul>
       </BannerNav>
