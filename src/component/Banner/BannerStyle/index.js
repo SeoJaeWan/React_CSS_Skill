@@ -4,7 +4,6 @@ export const BannerContainer = styled.aside`
   position: fixed;
   display: flex;
 
-  align-items: center;
   justify-content: space-between;
 
   width: 100%;
@@ -31,9 +30,21 @@ export const BannerNav = styled.nav`
   .banner-menu-items {
     height: 54px;
 
+    overflow: hidden;
+    transition: all 1s;
+  }
+
+  .banner-menu-items:hover {
+    height: 216px;
+  }
+
+  .banner-menu-items > a {
+    height: 54px;
+
     padding: 0 20px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 `;

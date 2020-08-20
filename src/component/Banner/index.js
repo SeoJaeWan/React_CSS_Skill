@@ -8,25 +8,20 @@ const Banner = () => {
       <h1 className="banner-title">React CSS Skill</h1>
       <BannerNav>
         <ul className="banner-menu">
-          <li>
-            <Link className="banner-menu-items" to="/">
-              Home
-            </Link>
+          <li className="banner-menu-items">
+            <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link className="banner-menu-items" to="/Slide">
-              Slide
-            </Link>
+          <li className="banner-menu-items">
+            <Link to="/Slide">Slide</Link>
+            <Link to="/Slide">Up&amp;Down</Link>
+            <Link to="/Slide">Left&amp;Right</Link>
+            <Link to="/Slide">Fade</Link>
           </li>
-          <li>
-            <Link className="banner-menu-items" to="/DragDrop">
-              Drag&amp;Drop
-            </Link>
+          <li className="banner-menu-items">
+            <Link to="/DragDrop">Drag&amp;Drop</Link>
           </li>
-          <li>
-            <Link className="banner-menu-items" to="/Floating">
-              Floating Banner
-            </Link>
+          <li className="banner-menu-items">
+            <Link to="/Floating">Floating Banner</Link>
           </li>
         </ul>
       </BannerNav>
