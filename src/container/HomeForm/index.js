@@ -30,7 +30,7 @@ const HomeForm = () => {
   useEffect(() => {
     let count = 0;
 
-    setInterval(() => {
+    let changeBanner = setInterval(() => {
       let beforeCount = count;
       count = (count + 1) % 4;
       setHomeContent((prev) =>
@@ -42,6 +42,10 @@ const HomeForm = () => {
         })
       );
     }, 5000);
+
+    return () => {
+      clearInterval(changeBanner);
+    };
   }, []);
   return <Home content={homeContent} />;
 };

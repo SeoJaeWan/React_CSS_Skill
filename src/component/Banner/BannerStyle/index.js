@@ -7,11 +7,18 @@ export const BannerContainer = styled.aside`
   justify-content: space-between;
 
   width: 100%;
+
+  left: 0;
+  top: 0;
+
   padding: 0 15%;
+  background-color: #fff;
 
   .banner-title {
     margin: 0;
     font-size: 40px;
+
+    line-height: 1.5;
   }
 `;
 
@@ -20,31 +27,19 @@ export const BannerNav = styled.nav`
     display: flex;
     list-style: none;
 
-    padding: 0;
     margin: 0;
 
     font-size: 18px;
     text-transform: uppercase;
   }
 
-  .banner-menu-items {
-    height: 54px;
-
-    overflow: hidden;
-    transition: all 1s;
-  }
-
-  .banner-menu-items:hover {
-    height: 216px;
-  }
-
-  .banner-menu-items > a {
-    height: 54px;
-
-    padding: 0 20px;
-
+  .banner-menu-item > a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 54px;
+
+    padding: 0 20px;
   }
 `;

@@ -67,4 +67,9 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
+  devServer: {
+    contentBase: "./dist",
+    port: 3000,
+    historyApiFallback: true,
+  },
 };

@@ -26,8 +26,6 @@ export const HomeContainer = styled.section`
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
-
   .home-title {
     font-size: 60px;
     line-height: 1;
