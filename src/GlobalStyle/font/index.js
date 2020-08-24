@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-/* 영어 불가능 */
+
 const font = createGlobalStyle`
     @font-face {
         font-family: "Raleway";
