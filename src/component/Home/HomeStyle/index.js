@@ -44,9 +44,6 @@ export const HomeContainer = styled.section`
 
     bottom: 30%;
 
-    font-weight: bold;
-    font-size: 20px;
-
     opacity: 0;
 
     transition: all 2s;

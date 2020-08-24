@@ -11,7 +11,10 @@ const Home = ({ content }) => {
 
       {content.map((item, index) => {
         return (
-          <p className={`home-content ${item.class}`} key={index}>
+          <p
+            className={`home-content fs-large fw-bold ${item.class}`}
+            key={index}
+          >
             {item.content}
           </p>
         );

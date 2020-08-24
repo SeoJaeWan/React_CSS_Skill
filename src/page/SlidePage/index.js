@@ -1,9 +1,8 @@
 import React from "react";
-import { Route } from "react-router-dom";
-import Slide from "../../component/Slide";
+import SlideForm from "../../container/SlideForm";
 
 const SlidePage = () => {
-  return <Slide />;
+  return <SlideForm />;
 };
 
 export default SlidePage;

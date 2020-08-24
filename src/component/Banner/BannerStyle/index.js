@@ -14,9 +14,12 @@ export const BannerContainer = styled.aside`
   padding: 0 15%;
   background-color: #fff;
 
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+  z-index: 3;
+
   .banner-title {
     margin: 0;
-    font-size: 40px;
 
     line-height: 1.5;
   }
@@ -29,7 +32,6 @@ export const BannerNav = styled.nav`
 
     margin: 0;
 
-    font-size: 18px;
     text-transform: uppercase;
   }
 

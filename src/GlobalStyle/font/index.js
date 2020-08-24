@@ -23,6 +23,52 @@ const font = createGlobalStyle`
             .default
         });
     }
+
+    /* font size */
+    .fs-tiny {
+      font-size: 12px
+    }
+
+    .fs-small {
+      font-size: 14px
+    }
+
+    .fs-base {
+      font-size: 16px
+    }
+
+    .fs-medium {
+      font-size: 18px
+    }
+
+    .fs-large {
+      font-size: 20px
+    }
+
+    .fs-h2 {
+      font-size : 36px
+    }
+
+    .fs-h1 {
+      font-size: 40px;
+    }
+
+    /* font weight */
+    .fw-light {
+    font-weight: 300
+    }
+
+    .fw-regular {
+        font-weight: 400
+    }
+
+    .fw-medium {
+        font-weight: 500
+    }
+
+    .fw-bold {
+        font-weight: 700
+    }
 `;
 
 export default font;

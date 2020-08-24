@@ -5,17 +5,23 @@ export const GlobalStyle = createGlobalStyle`
   ${font}
   * { 
     box-sizing: border-box;
-    font-family: "Raleway"
+    font-family: "Raleway";
+    margin: 0;
   }
 
   body {
-    margin: 0;
+
   }
   
   a {
     text-decoration: none;
     color: #000;
   }
+
+button{
+  border: none;
+  background-color: unset;
+}
 
   section {
     width: 70%;
@@ -28,18 +34,17 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.section`
   padding-top: 100px;
 
-  .main-title {
-    font-size: 36px;
-    font-family: "OpenSans";
-
+  header {
     margin: 0;
+
+    margin-bottom: 50px;
+  }
+  .main-title {
+    font-family: "OpenSans";
   }
 
   .main-menu {
-    margin: 0;
     padding: 5px 20px;
-
-    font-size: 18px;
   }
 
   .main-menu-item {
@@ -49,10 +54,11 @@ export const Container = styled.section`
 
   .content {
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .content > h2 {
-    margin-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .content-box {
