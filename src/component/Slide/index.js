@@ -18,7 +18,6 @@ const Slide = ({ position, onChange }) => {
       </header>
 
       <article className="content">
-        {position}
         <h2>Left&amp;Right</h2>
         <SlideContent position={position}>
           <div className="content-item red"></div>
