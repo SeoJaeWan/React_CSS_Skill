@@ -18,10 +18,10 @@ export const GlobalStyle = createGlobalStyle`
     color: #000;
   }
 
-button{
-  border: none;
-  background-color: unset;
-}
+  button{
+    border: none;
+    background-color: unset;
+  }
 
   section {
     width: 70%;
@@ -59,26 +59,6 @@ export const Container = styled.section`
 
   .content > h2 {
     padding-bottom: 30px;
-  }
-
-  .content-box {
-    display: flex;
-
-    width: 50%;
-    height: 320px;
-
-    margin: 0 auto;
-    overflow: hidden;
-
-    background-color: #000;
-  }
-
-  .content-box-item {
-    flex-shrink: 0;
-    width: 100%;
-    height: 320px;
-
-    transform: translateX(-100%);
   }
 
   .red {

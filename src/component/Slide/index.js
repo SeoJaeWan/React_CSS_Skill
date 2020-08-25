@@ -3,8 +3,9 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Container } from "../../GlobalStyle";
+import { SlideContent } from "./SlideStyle";
 
-const Slide = () => {
+const Slide = ({ position, onChange }) => {
   return (
     <Container>
       <header>
@@ -17,52 +18,27 @@ const Slide = () => {
       </header>
 
       <article className="content">
+        {position}
         <h2>Left&amp;Right</h2>
-        <div className="content-box">
-          <div className="content-box-item green"></div>
-          <div className="content-box-item red"></div>
-          <div className="content-box-item yellow"></div>
-          <div className="content-box-item green"></div>
-          <div className="content-box-item red"></div>
-        </div>
+        <SlideContent position={position}>
+          <div className="content-item red"></div>
+          <div className="content-item yellow"></div>
+          <div className="content-item green"></div>
 
-        <button>
-          <FontAwesomeIcon icon={faAngleLeft} size="3x" />
-        </button>
-        <button>
-          <FontAwesomeIcon icon={faAngleRight} size="3x" />
-        </button>
+          <div className="content-button">
+            <button type="button" onClick={() => onChange("left")}>
+              <FontAwesomeIcon icon={faAngleLeft} size="3x" />
+            </button>
+            <button type="button" onClick={() => onChange("right")}>
+              <FontAwesomeIcon icon={faAngleRight} size="3x" />
+            </button>
+          </div>
+        </SlideContent>
 
         <p className="content-text">
           가장 대표적인 Silde가 아닐까 생각하는 Left&amp;Right!
           <br />
         </p>
-      </article>
-
-      <article className="content">
-        <h2>Up&amp;Down</h2>
-        <div className="content-box">
-          <div className="content-box-item green"></div>
-          <div className="content-box-item red"></div>
-          <div className="content-box-item yellow"></div>
-          <div className="content-box-item green"></div>
-          <div className="content-box-item red"></div>
-        </div>
-
-        <p></p>
-      </article>
-
-      <article className="content">
-        <h2>Fade</h2>
-        <div className="content-box">
-          <div className="content-box-item green"></div>
-          <div className="content-box-item red"></div>
-          <div className="content-box-item yellow"></div>
-          <div className="content-box-item green"></div>
-          <div className="content-box-item red"></div>
-        </div>
-
-        <p></p>
       </article>
     </Container>
   );
