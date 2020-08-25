@@ -6,7 +6,6 @@ const SlideForm = () => {
 
   const onChange = (direction) => {
     let weight = 100;
-    console.log("여기당");
     if (direction === "left") weight *= -1;
 
     setPosition(position + weight);
