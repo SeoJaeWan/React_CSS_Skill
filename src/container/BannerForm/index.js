@@ -1,7 +1,8 @@
 import React from "react";
+import Banner from "../../component/Banner";
 
 const BannerForm = () => {
-  return <div></div>;
+  return <Banner />;
 };
 
 export default BannerForm;

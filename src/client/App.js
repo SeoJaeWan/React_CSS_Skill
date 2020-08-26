@@ -2,14 +2,14 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 import HomePage from "../page/HomePage";
-import Banner from "../component/Banner";
 import { GlobalStyle } from "../GlobalStyle";
 import SlidePage from "../page/SlidePage";
+import BannerForm from "../container/BannerForm";
 
 const App = () => {
   return (
     <>
-      <Banner />
+      <BannerForm />
       <Route exact path={["/", "/Home"]} component={HomePage} />
       <Route path="/Slide" component={SlidePage} />
 
