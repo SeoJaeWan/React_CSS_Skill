@@ -20,10 +20,11 @@ const Slide = ({ position, onChange }) => {
       <article className="content">
         <h2>Left&amp;Right</h2>
         <SlideContent position={position}>
+          <div className="content-item green"></div>
           <div className="content-item red"></div>
           <div className="content-item yellow"></div>
           <div className="content-item green"></div>
-
+          <div className="content-item red"></div>0 100 200 300 400
           <div className="content-button">
             <button type="button" onClick={() => onChange("left")}>
               <FontAwesomeIcon icon={faAngleLeft} size="3x" />
