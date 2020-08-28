@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "../../GlobalStyle";
 import { SlideContent } from "./SlideStyle";
 
-const Slide = ({ position, onChange }) => {
+const Slide = ({ animation, onChange }) => {
   return (
     <Container>
       <header>
@@ -19,12 +19,13 @@ const Slide = ({ position, onChange }) => {
 
       <article className="content">
         <h2>Left&amp;Right</h2>
-        <SlideContent position={position}>
+        <SlideContent animation={animation}>
           <div className="content-item green"></div>
           <div className="content-item red"></div>
           <div className="content-item yellow"></div>
           <div className="content-item green"></div>
-          <div className="content-item red"></div>0 100 200 300 400
+          <div className="content-item red"></div>
+
           <div className="content-button">
             <button type="button" onClick={() => onChange("left")}>
               <FontAwesomeIcon icon={faAngleLeft} size="3x" />

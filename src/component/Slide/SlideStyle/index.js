@@ -17,8 +17,8 @@ export const SlideContent = styled.div`
     width: 100%;
     height: 320px;
 
-    transform: translatex(${(props) => props.position}%);
-    transition: all 1s;
+    transform: translatex(${(props) => props.animation.position}%);
+    transition: ${(props) => (props.animation.delay ? "all 0.2s" : "none")};
   }
 
   .content-button {
