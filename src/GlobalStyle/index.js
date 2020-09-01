@@ -1,16 +1,14 @@
 import styled, { createGlobalStyle } from "styled-components";
 import font from "./font";
+import backgroundColor from "./backgroundColor";
 
 export const GlobalStyle = createGlobalStyle`
   ${font}
+  ${backgroundColor}
   * { 
     box-sizing: border-box;
     font-family: "Raleway";
     margin: 0;
-  }
-
-  body {
-
   }
   
   a {
@@ -57,18 +55,14 @@ export const Container = styled.section`
     margin-bottom: 50px;
   }
 
-  .content > h2 {
+  .content-title {
     padding-bottom: 30px;
   }
 
-  .red {
-    background-color: #ff4d4d;
-  }
+  .content-text {
+    font-family: "Raleway";
 
-  .yellow {
-    background-color: #fff200;
-  }
-  .green {
-    background-color: #32ff7e;
+    text-align: center;
+    margin: 10px 0 80px;
   }
 `;
