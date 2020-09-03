@@ -69,6 +69,10 @@ const font = createGlobalStyle`
     .fw-bold {
         font-weight: 700
     }
+
+    .fc-strong {
+      color: #c0392b;
+    }
 `;
 
 export default font;

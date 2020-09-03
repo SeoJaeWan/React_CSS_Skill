@@ -65,4 +65,8 @@ export const Container = styled.section`
     text-align: center;
     margin: 10px 0 80px;
   }
+
+  .flex {
+    display: flex;
+  }
 `;
